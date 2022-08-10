@@ -1,0 +1,114 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat:ital,wght@1,300&family=Open+Sans:wght@300&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@100;300;400;500&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #6560C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+    max-width: 320px;
+    height: 500px;
+    background-color: aliceblue;
+    border-radius: 16px;
+    background-image: url(./images.jpg);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.weather__container h1 {
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.date {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    letter-spacing: 1px;
+    color: aliceblue;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.weather {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 4px;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+.weather::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: aliceblue;
+    opacity: 0.4;
+    bottom: 0;
+}
+
+.weather span {
+    font-size: 3rem;
+    color: aliceblue;
+}
+
+.degree {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 2px solid aliceblue;
+    margin-top: 0.4rem;
+}
+
+.weather__container i {
+    color: aliceblue;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.weather__container p {
+    font-size: 1.2rem;
+    color: aliceblue;
+    opacity: 0.8;
+    margin-top: 0.3rem;
+}
+
+.weather__container button {
+    background-color: #454DAF;
+    color: aliceblue;
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    font-size: 0.8rem;
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    gap: 3px;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.weather__container button .deg {
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    border: 1px solid aliceblue;
+}
