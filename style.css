@@ -104,6 +104,11 @@ body {
     gap: 3px;
     border-radius: 8px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.4s all;
+}
+
+.weather__container button:hover {
+    transform: scale(1.1);
 }
 
 .weather__container button .deg {

@@ -10,7 +10,7 @@
 </head>
 <body>
     <section class="weather__container">
-        <h1>Yangon</h1>
+        <h1 class="location">Yangon</h1>
         <div class="date">
             <span>Wednesday,</span>
             <span>August,</span>
@@ -18,17 +18,19 @@
         </div>
 
         <div class="weather">
-                <span>30</span>
+                <span class="deg">30</span>
                 <div class="degree"></div>
-                <span>C</span>
+                <span class="tempC">C</span>
         </div>
         <i class="fa-solid fa-cloud-moon"></i>
         <p>Cloudy</p>
-        <button>
+        <button class="changeDegree">
             <span>switch</span>
             <div class="deg"></div>
-            <span>F</span>
+            <span class="degF">F</span>
         </button>
     </section>
+
+    <script src="./index.js"></script>
 </body>
 </html>
